@@ -1,3 +1,44 @@
+<!doctype html>
+<style>
+* {
+  box-sizing: border-box; 
+}
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  margin: 0;
+}
+#main {
+  display: flex;
+  flex: 1;
+}
+#main > article {
+  flex: 1;
+}
+#main > aside {
+  flex: 1vw;
+  background: white;
+}
+header{
+  background: White;
+  height: 120vh;
+}
+footer{
+  background: White;
+  height: 1vh;
+}
+header, footer, article, aside {
+  padding: 1em;
+}
+@media screen and (max-width: 575px) {
+  #main {
+    display: table-cell;
+    vertical-align: middle
+  }
+}
+</style>
+<body>
 <header>
 <html lang="ru">
 <p><a name="main"></a></p> 
@@ -14,17 +55,18 @@
 </div>
 </header>
 <nav>
-<div align="center">
+  <div id="main">
+    <article><div align="center">
 <big>
 <a href="https://ru.wikipedia.org/wiki/Магистр_дьявольского_культа_(роман)">Наша История</a> || <a href="https://rus-modaozushi.fandom.com/ru/wiki/Клан_Юьмэн_Цзян">Наш_вдохновитель</a>
-</big>
-</div>
-<h2>Меню</h2>
+</big></article>
+<aside><h2>Меню</h2>
 <ul id="navbar">
   <li><a href="#main">Главная</a></li>
   <li><a href="#aus">О нас</a></li>
-</ul>
-
+</ul></aside>
+</body>
+<body>
 <h2><u>Начни свой путь!</u></h2>
 <ul class="menu">
 <li><a href="https://modao-zushi.fandom.com/ru/wiki/Пристань_Лотоса">Наш дом</a></li>
@@ -148,6 +190,7 @@
    <p><a name="aus"></a></p> 
      <p>Мы адепты великого клана. Наш путь к совершенствованию непоколибим. Наша вера сильна, а дух наш крепок.
 </div>
+</body>
   <footer>
 <div align="center">
     (c) Глава Ордена
