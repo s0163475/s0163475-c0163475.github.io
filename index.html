@@ -1,11 +1,27 @@
 <!doctype html>
+<title>Пример</title>
 <style>
+      table {
+        width: 70%;
+        border-collapse: collapse;
+      }
+      td, th {
+        border: 1px solid Lightslategray;
+        padding: 3px 7px 2px 7px;
+      }
+      th {
+        text-align: left;
+        padding: 5px;
+        background-color: Lightslategray;
+        color: #fff;
+      }
+      tr:nth-child(odd) { background-color: Mintcream; }
 * {
   box-sizing: border-box; 
 }
 body {
   display: flex;
-  min-height: 100vh;
+  min-height: 100em;
   flex-direction: column;
   margin: 0;
 }
@@ -13,28 +29,57 @@ body {
   display: flex;
   flex: 1;
 }
+#nav{
+  display: flex;
+  flex: 2;
+}
+#tab{
+  display: flex;
+  flex: 3;
+}
+#for{
+  display: flex;
+  flex: 4;
+}
 #main > article {
   flex: 1;
 }
+#nav > rig {
+  flex: 2;
+}
+#nav > tabl {
+  flex: 3;
+}
+#for > fom {
+  flex: 4;
+}
 #main > aside {
-  flex: 1vw;
-  background: white;
+  flex: 1;
+  background: plum;
 }
 header{
   background: White;
-  height: 120vh;
+  height: 50em;
 }
 footer{
-  background: White;
+  background: white;
   height: 1vh;
 }
 header, footer, article, aside {
   padding: 1em;
 }
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 800px) {
   #main {
-    display: table-cell;
-    vertical-align: middle
+    display: block;
+  }
+  img { 
+  width: 100%; 
+  }
+  #nav{
+  display: inline;
+  }
+  #tab{
+  display: inline-block;
   }
 }
 </style>
@@ -59,15 +104,13 @@ header, footer, article, aside {
     <article><div align="center">
 <big>
 <a href="https://ru.wikipedia.org/wiki/Магистр_дьявольского_культа_(роман)">Наша История</a> || <a href="https://rus-modaozushi.fandom.com/ru/wiki/Клан_Юьмэн_Цзян">Наш_вдохновитель</a>
-</big></article>
-<aside><h2>Меню</h2>
+</big></div></article>
+    <aside><div align="left"><h2>Меню</h2>
 <ul id="navbar">
   <li><a href="#main">Главная</a></li>
   <li><a href="#aus">О нас</a></li>
-</ul></aside>
-</body>
-<body>
-<h2><u>Начни свой путь!</u></h2>
+</ul></div></aside></div>
+<div id="nav"><rig><h2><u>Начни свой путь!</u></h2>
 <ul class="menu">
 <li><a href="https://modao-zushi.fandom.com/ru/wiki/Пристань_Лотоса">Наш дом</a></li>
 <li><a href="https://vk.com/album-184459311_276412970">Наша семья</a></li>
@@ -75,15 +118,9 @@ header, footer, article, aside {
 <li><a href="https://www.arcanum.ru/blog/chto-takoe-energiya-ci">Помощь в обучении</a></li>
 <li><a href="https://ru.wikipedia.org/wiki/Знаменитые_чаи_Китая">Минутка для себя</a></li>
 <li><a href="https://ru.wikipedia.org/wiki/Медитация">Успокоение души</a></li>
-</ul>
-<div align="center">
+</ul></rig></div>
+<div id="tab"><tabl><div align="center">
 <table>
-  <colgroup>
-    <col span="1" style="background:Lightslategray">
-    <col style="background-color:Mintcream">
-    <col style="background-color:Mintcream">
-    <col style="background-color:Mintcream">
-  </colgroup>
   <tr>
     <th>Адепты</th>
     <th>Физическая сила</th>
@@ -121,8 +158,8 @@ header, footer, article, aside {
     <td>с 4-5 лет</td>
   </tr>
 </table>
-</div>
-<div align="center">
+</div></tabl></div></div>
+<div id="for"><fom><div align="center">
     <h1>Готов вступить?</h1>
 
     <form action="/"
@@ -185,14 +222,13 @@ header, footer, article, aside {
 
       <input type="submit" value="Отправить" />
     </form>
-</div>
-</nav>
+</div></fom></div>
+<footer>
    <p><a name="aus"></a></p> 
      <p>Мы адепты великого клана. Наш путь к совершенствованию непоколибим. Наша вера сильна, а дух наш крепок.
 </div>
-</body>
-  <footer>
 <div align="center">
     (c) Глава Ордена
 </div>
   </footer>
+</html>
