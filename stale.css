@@ -1,0 +1,114 @@
+@media screen {
+    .item {
+        height: 100px;
+        width: 100px;
+        background: red;
+        margin: 5px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        height: 500px;
+    }
+
+    .header {
+        background: #FFF0F5;
+    }
+
+    .logo {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .item1 {
+        display: flex;
+        justify-content: center;
+        height: 100px;
+    }
+
+    .item3 {
+        display: flex;
+        justify-content: center;
+        max-width: 100%;
+        height: auto;
+    }
+
+        .item3 table {
+            width: 70%;
+            border-collapse: collapse;
+        }
+
+        .item3 td, th {
+            border: 1px solid #000000;
+            padding: 3px 7px 2px 7px;
+        }
+
+        .item3 th {
+            text-align: left;
+            padding: 5px;
+            background-color: #7B68EE;
+            color: #000000;
+        }
+
+        .item3 tr:nth-child(odd) {
+            background-color: #f2c6ff;
+        }
+}
+@media handheld {
+    .item {
+        height: 90px;
+        width: 90px;
+        background: red;
+        margin: 5px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column-reverse;
+        height: 500px;
+    }
+
+    .header {
+        background: #FFF0F5;
+    }
+
+    .logo {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .item1 {
+        display: flex;
+        justify-content: center;
+        height: 100px;
+    }
+
+    .item3 {
+        display: flex;
+        justify-content: center;
+        max-width: 100%;
+        height: auto;
+    }
+
+        .item3 table {
+            width: 70%;
+            border-collapse: collapse;
+        }
+
+        .item3 td, th {
+            border: 1px solid #000000;
+            padding: 3px 7px 2px 7px;
+        }
+
+        .item3 th {
+            text-align: left;
+            padding: 5px;
+            background-color: #7B68EE;
+            color: #000000;
+        }
+
+        .item3 tr:nth-child(odd) {
+            background-color: #f2c6ff;
+        }
+}
